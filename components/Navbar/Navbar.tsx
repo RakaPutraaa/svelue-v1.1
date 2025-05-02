@@ -38,7 +38,11 @@ export default function Nav() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar  shouldHideOnScroll
+    onMenuOpenChange={setIsMenuOpen}
+    position="sticky"
+    isBordered
+    className="top-0 z-50 bg-background">
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}

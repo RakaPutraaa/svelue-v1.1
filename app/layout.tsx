@@ -9,17 +9,7 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 // import { Navbar } from "@/components/navbar";
 import Nav from "@/components/Navbar/Navbar";
-
-export const metadata: Metadata = {
-  title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
-  icons: {
-    icon: "/favicon.ico",
-  },
-};
+import Hero from "@/components/Hero/Hero";
 
 export const viewport: Viewport = {
   themeColor: [
@@ -45,8 +35,9 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
             <Nav />
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
-              {children}
+            <main className="container mx-auto max-w-7xl px-6 flex-grow">
+              {/* {children} */}
+              <Hero />
             </main>
             <footer className="w-full flex items-center justify-center py-3">
               <Link
@@ -56,7 +47,7 @@ export default function RootLayout({
                 title="heroui.com homepage"
               >
                 <span className="text-default-600">Powered by</span>
-                <p className="text-primary">HeroUI</p>
+                <p className="text-primary">Svelue</p>
               </Link>
             </footer>
           </div>
