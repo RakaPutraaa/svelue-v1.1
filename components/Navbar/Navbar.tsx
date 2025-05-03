@@ -1,4 +1,7 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable import/order */
+/* eslint-disable react/jsx-sort-props */
 'use client';
 
 import React from 'react';
@@ -11,9 +14,9 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-  Button,
 } from '@heroui/react';
 import { usePathname } from 'next/navigation';
+import YellowGlassButton from '../Ui/YellowGlassButton';
 
 export const SvelueLogo = () => {
   return (
@@ -61,7 +64,7 @@ export default function Nav() {
               href={item.href}
               className={`transition-colors ${
                 pathname === item.href
-                  ? 'text-primary font-semibold'
+                  ? 'text-[#F8A01B] font-semibold'
                   : 'text-foreground'
               }`}
             >
@@ -73,9 +76,9 @@ export default function Nav() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="primary" href="/contact" variant="flat">
+          <YellowGlassButton as={Link} href="/contact" variant="flat">
             Contact Us
-          </Button>
+          </YellowGlassButton>
         </NavbarItem>
       </NavbarContent>
 
@@ -86,7 +89,7 @@ export default function Nav() {
               href={item.href}
               className={`w-full text-lg transition-colors ${
                 pathname === item.href
-                  ? 'text-primary font-semibold'
+                  ? 'text-[#F8A01B] font-semibold'
                   : 'text-foreground'
               }`}
             >

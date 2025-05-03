@@ -13,6 +13,9 @@ const config = {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
       },
+      color: {
+        'brand-yellow': '#F8A01B',
+      }
     },
   },
   darkMode: "class",
