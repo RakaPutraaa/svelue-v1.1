@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable padding-line-between-statements */
 'use client';
-import YellowGlassButton from '../Ui/YellowGlassButton';
+import YellowGlassButton from '../../Ui/YellowGlassButton';
 
 const Hero = () => {
     return (

@@ -9,7 +9,8 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 // import { Navbar } from "@/components/navbar";
 import Nav from "@/components/Navbar/Navbar";
-import Hero from "@/components/Hero/Hero";
+import Hero from "@/components/HomePage/Hero/Hero";
+import About from "@/components/HomePage/About/About";
 
 export const viewport: Viewport = {
   themeColor: [
@@ -38,6 +39,7 @@ export default function RootLayout({
             <main className="container mx-auto max-w-7xl px-6 flex-grow">
               {/* {children} */}
               <Hero />
+              <About />
             </main>
             <footer className="w-full flex items-center justify-center py-3">
               <Link
