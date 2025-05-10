@@ -1,16 +1,17 @@
 import "@/styles/globals.css";
-import { Metadata, Viewport } from "next";
+import { Viewport } from "next";
 import { Link } from "@heroui/link";
 import clsx from "clsx";
 
+import { image } from "@heroui/theme";
 import { Providers } from "./providers";
 
-import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 // import { Navbar } from "@/components/navbar";
 import Nav from "@/components/Navbar/Navbar";
 import Hero from "@/components/HomePage/Hero/Hero";
 import About from "@/components/HomePage/About/About";
+import Service from "@/components/HomePage/Service/Service";
 
 export const viewport: Viewport = {
   themeColor: [
@@ -40,6 +41,7 @@ export default function RootLayout({
               {/* {children} */}
               <Hero />
               <About />
+              <Service />
             </main>
             <footer className="w-full flex items-center justify-center py-3">
               <Link
