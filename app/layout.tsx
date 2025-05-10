@@ -3,7 +3,6 @@ import { Viewport } from "next";
 import { Link } from "@heroui/link";
 import clsx from "clsx";
 
-import { image } from "@heroui/theme";
 import { Providers } from "./providers";
 
 import { fontSans } from "@/config/fonts";
@@ -14,6 +13,7 @@ import About from "@/components/HomePage/About/About";
 import Service from "@/components/HomePage/Service/Service";
 import Faq from "@/components/HomePage/Faq/Faq";
 import Contact from "@/components/HomePage/Contact/Contact";
+import Footer from "@/components/Footer/Footer";
 
 export const viewport: Viewport = {
   themeColor: [
@@ -47,17 +47,7 @@ export default function RootLayout({
               <Faq />
               <Contact />
             </main>
-            <footer className="w-full flex items-center justify-center py-3">
-              <Link
-                isExternal
-                className="flex items-center gap-1 text-current"
-                href="https://heroui.com?utm_source=next-app-template"
-                title="heroui.com homepage"
-              >
-                <span className="text-default-600">Powered by</span>
-                <p className="text-primary">Svelue</p>
-              </Link>
-            </footer>
+            <Footer />
           </div>
         </Providers>
       </body>
