@@ -13,6 +13,7 @@ import Hero from "@/components/HomePage/Hero/Hero";
 import About from "@/components/HomePage/About/About";
 import Service from "@/components/HomePage/Service/Service";
 import Faq from "@/components/HomePage/Faq/Faq";
+import Contact from "@/components/HomePage/Contact/Contact";
 
 export const viewport: Viewport = {
   themeColor: [
@@ -44,6 +45,7 @@ export default function RootLayout({
               <About />
               <Service />
               <Faq />
+              <Contact />
             </main>
             <footer className="w-full flex items-center justify-center py-3">
               <Link
