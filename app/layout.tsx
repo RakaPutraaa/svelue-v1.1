@@ -4,6 +4,7 @@ import Nav from "@/components/Navbar/Navbar";
 import { fontSans } from "@/config/fonts";
 import clsx from "clsx";
 import { Providers } from "./providers";
+import Cursor from "@/components/cursor";
 
 export default function RootLayout({
   children,
@@ -22,6 +23,7 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col min-h-screen">
             <Nav />
+            <Cursor />
             {/* Jangan bungkus children di <main> di sini kalau kamu pakai <main> di dalam setiap page */}
             {children}
             <Footer />
