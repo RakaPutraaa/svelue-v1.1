@@ -5,6 +5,7 @@ import { fontSans } from "@/config/fonts";
 import clsx from "clsx";
 import { Providers } from "./providers";
 import Cursor from "@/components/cursor";
+import { SmoothScroll } from "@/components/smooth-scroll";
 
 export default function RootLayout({
   children,
@@ -21,6 +22,7 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+          <SmoothScroll />
           <div className="relative flex flex-col min-h-screen">
             <Nav />
             <Cursor />
