@@ -35,17 +35,19 @@ export default function Nav() {
   const pathname = usePathname();
 
   const menuItems = [
-    { label: 'Home', href: '/' },
-    { label: 'About', href: '/about' },
-    { label: 'Services', href: '/services' },
+    { id: 'home', label: 'Home', href: '/' },
+    { id: 'about', label: 'About', href: '/about' },
+    { id: 'services', label: 'Services', href: '/services' },
   ];
 
   return (
-    <Navbar  shouldHideOnScroll
-    onMenuOpenChange={setIsMenuOpen}
-    position="sticky"
-    isBordered
-    className="top-0 z-50 bg-background">
+    <Navbar
+      shouldHideOnScroll
+      onMenuOpenChange={setIsMenuOpen}
+      position="sticky"
+      isBordered
+      className="top-0 z-50 bg-background"
+    >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
@@ -59,7 +61,7 @@ export default function Nav() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {menuItems.map((item) => (
-          <NavbarItem key={item.href}>
+          <NavbarItem key={item.id}>
             <Link
               href={item.href}
               className={`transition-colors ${
@@ -84,7 +86,7 @@ export default function Nav() {
 
       <NavbarMenu>
         {menuItems.map((item) => (
-          <NavbarMenuItem key={item.href}>
+          <NavbarMenuItem key={item.id}>
             <Link
               href={item.href}
               className={`w-full text-lg transition-colors ${

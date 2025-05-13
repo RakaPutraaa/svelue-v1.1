@@ -4,16 +4,19 @@ import CardServices from "@/components/Ui/CardServices";
 
 const services = [
   {
+    id: "web-dev",
     title: "Web Development",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "/images/app-development.png",
   },
   {
+    id: "video-edit",
     title: "Video Editing",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "/images/editing.png",
   },
   {
+    id: "media-mgmt",
     title: "Media Management",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     icon: "/images/media.png",
@@ -27,9 +30,9 @@ const Service = () => {
         <h1>Our Services</h1>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-        {services.map((service, index) => (
+        {services.map((service) => (
           <CardServices
-            key={index}
+            key={service.id}
             title={service.title}
             description={service.description}
             icon={service.icon}
