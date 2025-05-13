@@ -1,9 +1,9 @@
-import { title } from "@/components/primitives";
+import Hero from "@/components/AboutPage/Hero/Hero";
 
-export default function AboutPage() {
+export default function ContactPage() {
   return (
-    <div>
-      <h1 className={title()}>About</h1>
-    </div>
+    <main className="container mx-auto max-w-7xl px-6">
+      <Hero />
+    </main>
   );
 }
