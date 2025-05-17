@@ -7,14 +7,14 @@ const Hero = () => {
     return (
         <section className="min-h-[calc(100vh-64px)] flex items-center justify-center text-white px-4">
             <div className="text-center max-w-2xl">
-                <h1 className="text-4xl sm:text-6xl font-bold leading-tight">
+                <h2 className="text-4xl sm:text-6xl font-bold leading-tight">
                     Creative Solutions For <br /> Modern 
                     <span 
                     className="text-[#030C4D] px-1 rounded"
                     style={{ backgroundColor: "#F8A01B" }}>
                         Businesses
                     </span>
-                </h1>
+                </h2>
                 <p className="mt-6 text-base sm:text-xl leading-tight">
                 We increase revenue and ensure sustainable long-term growth for your business through powerful Webflow websites.
                 </p>

@@ -27,7 +27,7 @@ export default function Faq() {
   return (
     <section className="bg-black py-12 px-4">
       <div className="text-center text-white text-3xl md:text-4xl font-bold mb-10">
-        <h1>Frequently Asked Questions</h1>
+        <h2>Frequently Asked Questions</h2>
       </div>
       <div className="max-w-xl mx-auto">
         <Accordion variant="shadow">
