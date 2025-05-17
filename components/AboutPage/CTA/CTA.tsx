@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable import/order */
 "use client";
 
 import YellowGlassButton from "@/components/Ui/YellowGlassButton";
@@ -11,8 +13,8 @@ const CTA = () => {
           Ready to Transform Your Business?
         </h2>
         <p className="text-gray-300 text-lg mb-8">
-          Let's work together to bring your digital vision to life. Our team is ready
-          to help you succeed in the digital world.
+          Let's work together to bring your digital vision to life. Our team is
+          ready to help you succeed in the digital world.
         </p>
         <YellowGlassButton as={Link} href="/contact">
           Get Started Today

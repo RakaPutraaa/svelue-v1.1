@@ -1,8 +1,7 @@
-/* eslint-disable prettier/prettier */
 /* eslint-disable react/jsx-sort-props */
-'use client'
+"use client";
 
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -14,13 +13,14 @@ export default function About() {
             Young Minds, Big Impact
           </h2>
           <p className="text-white text-lg leading-relaxed">
-            At Svelue, we are a collective of passionate university students in Bali with a shared mission to help empower local entrepreneurs and growing businesses. Our journey began with a simple{' '}
-            <span 
-              className="inline-block bg-[#F8A01B] text-[#030C4D] px-2 py-1 rounded whitespace-nowrap"
-            >
+            At Svelue, we are a collective of passionate university students in
+            Bali with a shared mission to help empower local entrepreneurs and
+            growing businesses. Our journey began with a simple{" "}
+            <span className="inline-block bg-[#F8A01B] text-[#030C4D] px-2 py-1 rounded whitespace-nowrap">
               goal: to support small businesses
-            </span>
-            {' '}by providing them with modern digital solutions that are effective, affordable, and tailored to their needs.
+            </span>{" "}
+            by providing them with modern digital solutions that are effective,
+            affordable, and tailored to their needs.
           </p>
         </div>
 
@@ -36,5 +36,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }

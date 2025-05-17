@@ -8,8 +8,8 @@ const Hero = () => {
           Our Services
         </h2>
         <p className="text-xl text-gray-300 mb-8">
-          We provide comprehensive digital solutions to help your business thrive in
-          the digital age.
+          We provide comprehensive digital solutions to help your business
+          thrive in the digital age.
         </p>
       </div>
     </section>

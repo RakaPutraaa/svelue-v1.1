@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-sort-props */
 "use client";
 
 import Link from "next/link";

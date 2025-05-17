@@ -10,18 +10,18 @@ export default function Faq() {
     {
       id: "faq-1",
       title: "Accordion 1",
-      content: defaultContent
+      content: defaultContent,
     },
     {
-      id: "faq-2", 
+      id: "faq-2",
       title: "Accordion 2",
-      content: defaultContent
+      content: defaultContent,
     },
     {
       id: "faq-3",
-      title: "Accordion 3", 
-      content: defaultContent
-    }
+      title: "Accordion 3",
+      content: defaultContent,
+    },
   ];
 
   return (
@@ -32,9 +32,9 @@ export default function Faq() {
       <div className="max-w-xl mx-auto">
         <Accordion variant="shadow">
           {faqItems.map((item) => (
-            <AccordionItem 
+            <AccordionItem
               key={item.id}
-              aria-label={item.title} 
+              aria-label={item.title}
               title={item.title}
             >
               {item.content}

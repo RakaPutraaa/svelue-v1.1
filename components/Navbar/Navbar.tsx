@@ -1,10 +1,9 @@
-/* eslint-disable prettier/prettier */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable import/order */
 /* eslint-disable react/jsx-sort-props */
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -14,9 +13,9 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-} from '@heroui/react';
-import { usePathname } from 'next/navigation';
-import YellowGlassButton from '../Ui/YellowGlassButton';
+} from "@heroui/react";
+import { usePathname } from "next/navigation";
+import YellowGlassButton from "../Ui/YellowGlassButton";
 
 export const SvelueLogo = () => {
   return (
@@ -35,9 +34,9 @@ export default function Nav() {
   const pathname = usePathname();
 
   const menuItems = [
-    { id: 'home', label: 'Home', href: '/' },
-    { id: 'about', label: 'About', href: '/about' },
-    { id: 'services', label: 'Services', href: '/services' },
+    { id: "home", label: "Home", href: "/" },
+    { id: "about", label: "About", href: "/about" },
+    { id: "services", label: "Services", href: "/services" },
   ];
 
   return (
@@ -50,7 +49,7 @@ export default function Nav() {
     >
       <NavbarContent>
         <NavbarMenuToggle
-          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
         <NavbarBrand>
@@ -66,8 +65,8 @@ export default function Nav() {
               href={item.href}
               className={`transition-colors ${
                 pathname === item.href
-                  ? 'text-[#F8A01B] font-semibold'
-                  : 'text-foreground'
+                  ? "text-[#F8A01B] font-semibold"
+                  : "text-foreground"
               }`}
             >
               {item.label}
@@ -91,8 +90,8 @@ export default function Nav() {
               href={item.href}
               className={`w-full text-lg transition-colors ${
                 pathname === item.href
-                  ? 'text-[#F8A01B] font-semibold'
-                  : 'text-foreground'
+                  ? "text-[#F8A01B] font-semibold"
+                  : "text-foreground"
               }`}
             >
               {item.label}

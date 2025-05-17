@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-sort-props */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import { useRef, useState } from "react";
@@ -31,7 +33,6 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           alert("Something went wrong. Please try again.");
-          console.error(error);
         },
       );
   };
