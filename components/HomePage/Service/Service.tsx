@@ -7,19 +7,28 @@ const services = [
   {
     id: "web-dev",
     title: "Web Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "We build fast, responsive, and modern websites that match your business goals.",
     icon: "/images/app-development.png",
   },
   {
-    id: "video-edit",
-    title: "Video Editing",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    icon: "/images/editing.png",
+    id: "uiux",
+    title: "UI/UX",
+    description:
+      "Great design starts with great experience. We craft user-friendly interfaces.",
+    icon: "/images/web-design.png",
+  },
+  {
+    id: "graphic design",
+    title: "Graphic Design",
+    description:
+      "From logos to visuals that pop, our creative designs help your brand stand out.",
+    icon: "/images/curve.png",
   },
   {
     id: "media-mgmt",
-    title: "Media Management",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Video & Photo",
+    description: "Capture your brand’s story with high-quality visuals.",
     icon: "/images/media.png",
   },
 ];

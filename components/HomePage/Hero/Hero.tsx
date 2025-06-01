@@ -1,5 +1,7 @@
 /* eslint-disable padding-line-between-statements */
 "use client";
+import Link from "next/link";
+
 import YellowGlassButton from "../../Ui/YellowGlassButton";
 
 const Hero = () => {
@@ -16,10 +18,14 @@ const Hero = () => {
           </span>
         </h2>
         <p className="mt-6 text-base sm:text-xl leading-tight">
-          We increase revenue and ensure sustainable long-term growth for your
-          business through powerful Webflow websites.
+          Helping small businesses shine online with creative, budget-friendly
+          solutions from websites and UI/UX to branding, photos, and videos.
         </p>
-        <YellowGlassButton className="mt-6 text-[#030C4D]">
+        <YellowGlassButton
+          as={Link}
+          className="mt-6 text-[#030C4D]"
+          href="/contact"
+        >
           Get Started
         </YellowGlassButton>
         {/* Slogan */}
@@ -29,7 +35,7 @@ const Hero = () => {
             style={{ backgroundColor: "#F8A01B" }}
           />
           <span className="text-white text-sm tracking-widest font-semibold uppercase">
-            SVELUE | PARTNER DIGITAL BISNIS ANDA
+            SVELUE | YOUR DIGITAL BUSINESS PARTNER
           </span>
           <div
             className="h-px w-10 ml-4"

@@ -3,7 +3,7 @@
 
 const Values = () => {
   return (
-    <section className="container mx-auto py-16 px-4 bg-zinc-900/50">
+    <section className="container mx-auto py-16 px-4">
       <div className="max-w-3xl mx-auto text-center mb-12">
         <h2 className="text-3xl font-bold mb-4">Our Values</h2>
         <p className="text-gray-300">

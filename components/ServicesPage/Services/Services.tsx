@@ -5,36 +5,41 @@ const services = [
     title: "Web Development",
     description:
       "Custom website development using modern technologies like Next.js, React, and Laravel. We create responsive, fast, and SEO-friendly websites.",
+    features: ["Custom Website Development", "Website Maintenance"],
+  },
+  {
+    title: "UI/UX",
+    description:
+      "Great design starts with great experience. We craft user-friendly interfaces that make your brand easy to love and hard to forget.",
     features: [
-      "Custom Website Development",
-      "E-commerce Solutions",
-      "Web Applications",
-      "CMS Integration",
-      "Website Maintenance",
+      "User Research",
+      "Wireframing & Prototyping",
+      "UI Design Systems",
+      "UX Audits",
+      "Mobile & Web Interface Design",
     ],
   },
   {
-    title: "Video Editing",
+    title: "Graphic Design",
     description:
-      "Professional video editing services for your marketing needs, social media content, and corporate presentations.",
+      "From logos to visuals that pop, our creative designs help your brand stand out and leave a lasting impression.",
     features: [
+      "Logo Design",
+      "Branding Assets",
+      "Social Media Graphics",
+      "Marketing Materials",
+    ],
+  },
+  {
+    title: "Video & Photo",
+    description:
+      "Capture your brand’s story with high-quality visuals — perfect for promotions, social media, and everything in between.",
+    features: [
+      "Product Photography",
+      "Promotional Videos",
       "Social Media Content",
-      "Marketing Videos",
-      "Corporate Videos",
-      "Motion Graphics",
-      "Video Optimization",
-    ],
-  },
-  {
-    title: "Media Management",
-    description:
-      "Comprehensive social media management to boost your brand's online presence and engagement.",
-    features: [
-      "Social Media Strategy",
-      "Content Creation",
-      "Community Management",
-      "Analytics & Reporting",
-      "Brand Development",
+      "Video Editing",
+      "Event Documentation",
     ],
   },
 ];

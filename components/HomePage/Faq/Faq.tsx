@@ -3,24 +3,24 @@
 import { Accordion, AccordionItem } from "@heroui/react";
 
 export default function Faq() {
-  const defaultContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-
   const faqItems = [
     {
       id: "faq-1",
-      title: "Accordion 1",
-      content: defaultContent,
+      title: "What services does Svelue offer?",
+      content:
+        "Svelue offers a wide range of digital services including website development (company profile, e-commerce, portfolio, etc.), graphic design (logos, posters, banners), and visual documentation such as photography and video editing. All services can be tailored to meet the needs of small to medium-sized businesses.",
     },
     {
       id: "faq-2",
-      title: "Accordion 2",
-      content: defaultContent,
+      title: "Can I consult with your team before making an order?",
+      content:
+        "Absolutely! We highly recommend a consultation first so we can better understand your needs. Reach out to us on WhatsApp at +62 851-4103-4756, and our team will guide you from ideas to execution.",
     },
     {
       id: "faq-3",
-      title: "Accordion 3",
-      content: defaultContent,
+      title: "How long does it take to complete a project?",
+      content:
+        "The project duration depends on the type and complexity of the service. For simple websites or designs, it usually takes 3–7 working days. For larger projects, we will provide a clear timeline during the consultation to ensure transparency and efficient delivery.",
     },
   ];
 
