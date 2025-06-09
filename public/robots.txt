@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://svelue.com
+
+# Sitemaps
+Sitemap: https://svelue.com/sitemap.xml
